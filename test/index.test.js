@@ -9,7 +9,7 @@ describe('Testing easyFormat', () => {
     expect(fmt.currency(0, true)).to.equal('0.00')
   })
 
-  it('fmt.currency', () => {
+  it('fmt.time', () => {
     expect(fmt.time(new Date(2020,10,22), 'YYYY-MM-DD')).to.equal('2020-11-22')
     expect(fmt.time(new Date(2020,10,22, 10, 15, 2), 'YYYY-MM-DD hh:mm:ss')).to.equal('2020-11-22 10:15:02')
   })
