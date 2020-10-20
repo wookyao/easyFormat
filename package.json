@@ -6,11 +6,12 @@
   "scripts": {
     "dev": "rollup -c -w",
     "build": "rollup -c",
+    "test:build": "npm run build:pro && mocha test/*.test.js",
     "test": "mocha test/*.test.js",
     "clearDist": "rimraf \"./dist\"",
     "clearLib": "rimraf \"./lib\"",
     "clean": "npm run clearLib && npm run clearDist",
-    "build:pro": "cross-env APP_ENV=production npm run build"
+    "build:pro": "npm run clearLib && cross-env APP_ENV=production npm run build"
   },
   "keywords": [
     "format",
