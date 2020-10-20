@@ -1,4 +1,4 @@
- import isDOM from './_isDOM'
+ import {isDOM} from './_types'
  
  export default function IntersectionObserver (element, showOnce = true) {
    return new Promise((resolve, reject) => {
