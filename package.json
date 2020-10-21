@@ -34,5 +34,13 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-serve": "^1.0.4",
     "rollup-plugin-uglify": "^6.0.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wookyao/easyFormat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wookyao/easyFormat/issues"
+  },
+  "homepage": "https://github.com/wookyao/easyFormat#readme"
 }
