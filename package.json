@@ -1,8 +1,8 @@
 {
   "name": "easy-format",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "一个简单常用的格式化小工具",
+  "main": "./lib/easy_format.min.js",
   "scripts": {
     "dev": "rollup -c -w",
     "build": "rollup -c",
