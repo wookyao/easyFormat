@@ -1,8 +1,10 @@
-/node_modules/
-/test/
-/src
-/dist/
-/public/
+node_modules
+test
+src
+dist
+public
+modules
+.babelrc
 package-lock.json
 rollup.config.js
 npm-debug.log*

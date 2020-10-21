@@ -1,5 +1,5 @@
 {
-  "name": "easy-format",
+  "name": "easy-fmt",
   "version": "1.0.0",
   "description": "一个简单常用的格式化小工具",
   "main": "./lib/easy_format.min.js",
