@@ -47,4 +47,10 @@ describe('Testing easyFormat', () => {
     expect(fmt.trim(' 152  111 222 ', 'right')).to.equal(' 152  111 222')
   })
 
+  it('fmt.phone', () => {
+    expect(fmt.phone('15256936283')).to.equal('152-5693-6283');
+    expect(fmt.phone('15256936283', '/')).to.equal('152/5693/6283');
+    expect(fmt.phone('15256936283','/','1/1/1')).to.equal('1-5-2-56936283');
+  })
+
 })
