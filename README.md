@@ -42,6 +42,10 @@ fmt.mask("15211112222", 12, 4); // 15211112222
 fmt.mask("15211112222", 3, 4); // 152****2222
 
 fmt.trim(" 152  111 222 ", "all"); // 152111222
+
+fmt.phone("15211112222"); // 152-1111-2222
+fmt.phone("15211112222", "/"); // 152/1111/2222
+fmt.phone("15211112222", "-", "1/1/1"); // 1-5-2-11112222
 ```
 
 ## API
@@ -61,3 +65,4 @@ fmt.trim(" 152  111 222 ", "all"); // 152111222
 | `maskRight`            | `fmt.maskRight(str: String, maskLen: Number, _placeholder: String)`           | 从右侧开始遮挡             |
 | `trim`                 | `fmt.trim(str: String, type: String['all', 'lr', 'left', 'right'])`           | 清空字符串空格             |
 | `guid`                 | `fmt.guid()`                                                                  | 生成随机码                 |
+| `phone`                | `fmt.phone(PhoneNumber: String, split: String, distribute: String)`           | 格式化手机号码             |
